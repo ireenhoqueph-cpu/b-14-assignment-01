@@ -149,3 +149,152 @@ header{
     color: #575757;
     font-size: 16px;
 }
+
+.pricing{
+    width: 1100px;
+    margin: 100px auto;
+}
+
+.pricing-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-title h2{
+    font-size:45px;
+    font-weight:700;
+    color:#182434;
+    margin-bottom:15px;
+}
+
+.pricing-title p{
+    color:#6b7280;
+    font-size:17px;
+}
+
+.pricing-cards{
+    display:flex;
+    gap:25px;
+}
+
+.card{
+    flex:1;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:25px;
+    background:white;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.plan{
+    color:#6b7280;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.card h3{
+    font-size:56px;
+    margin-top:10px;
+    color:#182434;
+}
+
+.per-person{
+    color:#6b7280;
+    margin-top:5px;
+}
+
+.card hr{
+    margin:20px 0;
+    border:none;
+    border-top:1px solid #e5e7eb;
+}
+
+.card ul{
+    list-style:none;
+    flex:1;
+}
+
+.card ul li{
+    margin-bottom:16px;
+    color:#374151;
+    font-size:15px;
+    position:relative;
+    padding-left:18px;
+}
+
+.card ul li::before{
+    content:"•";
+    color:#2563eb;
+    position:absolute;
+    left:0;
+}
+
+.card button{
+    width:100%;
+    padding:14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* Standard */
+
+.normal-btn{
+    background:white;
+    color:#2563eb;
+    border:1px solid #2563eb;
+}
+
+/* Team */
+
+.dark-btn{
+    background:white;
+    color:#111827;
+    border:1px solid #111827;
+}
+
+/* Pro Card */
+
+.active{
+    background:#132235;
+    color:white;
+    border:none;
+}
+
+.active h3,
+.active .per-person,
+.active ul li{
+    color:white;
+}
+
+.active .plan{
+    color:#60a5fa;
+}
+
+.active hr{
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.primary-btn{
+    background:#2563eb;
+    border:none;
+    color:white;
+}
+
+.primary-btn:hover{
+    background:#1d4ed8;
+}
+
+.normal-btn:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.dark-btn:hover{
+    background:#111827;
+    color:white;
+}
