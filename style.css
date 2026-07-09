@@ -1,0 +1,37 @@
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.common-button{
+    padding: 10px 25px;
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+.navbar img{
+    max-width: 1200px;
+    width: 100px;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar li{
+   color: #575757; 
+}
+
+
+
