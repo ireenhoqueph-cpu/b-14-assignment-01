@@ -1,0 +1,1 @@
+I am making a dev-conference-related website; it has a navbar section, a banner section, a speakers' info section, 3 different price category ticket sections and a footer. Now, I want to add a section between the ticket price section and the footer, and I want you to suggest me which section will be appropriate on this website and which content should be there.

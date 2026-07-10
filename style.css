@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+/* Common section */
 .common-button{
     padding: 10px 25px;
     background-color: #1D4ED8;
@@ -150,74 +152,80 @@ header{
     font-size: 16px;
 }
 
-.pricing{
+
+
+
+/* Plan your spot section */
+.ticket-pricing{
     width: 1100px;
     margin: 100px auto;
 }
 
-.pricing-title{
+
+/* Heading part */
+.section-heading{
     text-align: center;
     margin-bottom: 50px;
 }
 
-.pricing-title h2{
-    font-size:45px;
-    font-weight:700;
+.section-heading h2{
+    font-size:50px;
+    /* font-weight:700; */
     color:#182434;
     margin-bottom:15px;
 }
 
-.pricing-title p{
+.section-heading p{
     color:#6b7280;
-    font-size:17px;
+    /* font-size:17px; */
 }
 
-.pricing-cards{
+/* card container */
+.pricing-container{
     display:flex;
     gap:25px;
 }
 
-.card{
+.pricing-card{
     flex:1;
+    background:white;
     border:1px solid #e5e7eb;
     border-radius:12px;
     padding:25px;
-    background:white;
-
     display:flex;
     flex-direction:column;
 }
 
-.plan{
+.plan-name{
     color:#6b7280;
     font-size:12px;
-    font-weight:700;
+    font-weight:bold;
     letter-spacing:1px;
 }
 
-.card h3{
-    font-size:56px;
-    margin-top:10px;
+.pricing-card h3{
+    font-size:45px;
     color:#182434;
+    margin-top:10px;
 }
 
-.per-person{
+.plan-duration{
     color:#6b7280;
     margin-top:5px;
 }
 
-.card hr{
+.pricing-card hr{
     margin:20px 0;
     border:none;
     border-top:1px solid #e5e7eb;
 }
 
-.card ul{
+.plan-features{
     list-style:none;
     flex:1;
 }
 
-.card ul li{
+.plan-features li{
     margin-bottom:16px;
     color:#374151;
     font-size:15px;
@@ -225,14 +233,14 @@ header{
     padding-left:18px;
 }
 
-.card ul li::before{
+.plan-features li::before{
     content:"•";
     color:#2563eb;
     position:absolute;
     left:0;
 }
 
-.card button{
+.pricing-card button{
     width:100%;
     padding:14px;
     border-radius:8px;
@@ -243,60 +251,43 @@ header{
 
 /* Standard */
 
-.normal-btn{
+.standard-btn{
     background:white;
     color:#2563eb;
     border:1px solid #2563eb;
 }
 
-/* Team */
 
-.dark-btn{
-    background:white;
-    color:#111827;
-    border:1px solid #111827;
+/* Pro card */
+.featured-plan{
+    background-color: #132235;
+    border: none;
 }
 
-/* Pro Card */
-
-.active{
-    background:#132235;
-    color:white;
-    border:none;
+.featured-plan h3,
+.featured-plan .plan-duration,
+.featured-plan .plan-features li{
+    color: white;
 }
 
-.active h3,
-.active .per-person,
-.active ul li{
-    color:white;
+.featured-plan .plan-name {
+    color: #60a5fa;
 }
 
-.active .plan{
-    color:#60a5fa;
+.featured-plan hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.active hr{
-    border-top:1px solid rgba(255,255,255,.15);
+.featured-button{
+    background-color: #2563eb;
+    color: white;
+    border: none;
 }
 
-.primary-btn{
-    background:#2563eb;
-    border:none;
-    color:white;
-}
-
-.primary-btn:hover{
-    background:#1d4ed8;
-}
-
-.normal-btn:hover{
-    background:#2563eb;
-    color:white;
-}
-
-.dark-btn:hover{
-    background:#111827;
-    color:white;
+.contact-button{
+    background-color: white;
+    border: 1px solid #111827;
+    color: #f0f1f4;
 }
 
 
@@ -359,4 +350,51 @@ header{
     color: #4B5563;
     font-size: 16px;
     line-height: 1.8;
+}
+
+
+/* Footer section */
+
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: #0d1b2a;
+    margin: 0 auto;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.footer-top-left img{
+    max-width: 100%;
+    width: 90px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.footer-top-right img{
+    width: 30px;
+}
+
+.copyright-message{
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.privacy-content{
+    font-size: 12px;
+    color: #FFFFFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
