@@ -194,6 +194,14 @@ header{
     padding:25px;
     display:flex;
     flex-direction:column;
+
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    border-color: #2563eb;
 }
 
 .plan-name{
@@ -278,16 +286,16 @@ header{
     border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.featured-button{
+.featured-btn{
     background-color: #2563eb;
     color: white;
     border: none;
 }
 
-.contact-button{
+.contact-btn{
     background-color: white;
     border: 1px solid #111827;
-    color: #f0f1f4;
+    color: #111827;
 }
 
 
@@ -372,6 +380,13 @@ footer{
 .footer-top-left img{
     max-width: 100%;
     width: 90px;
+}
+
+footer .footer-divider{
+    border: none;
+    height: 1px;
+    background-color: white;
+    margin: 0 8%;
 }
 
 .footer-bottom{
